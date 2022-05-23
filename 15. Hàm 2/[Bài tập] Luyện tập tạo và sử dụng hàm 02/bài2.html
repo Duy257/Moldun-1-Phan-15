@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính diện tích hình vuông</h1>
+    <input type="text" placeholder="nhập chiều ngang(cm)" id="width">
+    <input type="text" placeholder="nhập chiều dọc(cm)" id="height">
+    <button onclick="Ssquare()">Tính</button>
+    <hr>
+    <h1>Tính chu vi hình tròn</h1>
+    <input type="text" placeholder="nhập bán kính(cm)" id="radius">
+    <button onclick="Ccircle()">Tính</button>
+
+    <script>
+        function Ssquare() {
+            let a = document.getElementById('width').value;
+            let b = document.getElementById('height').value;
+            let dientich;
+            dientich = a * b;
+            alert('diện tích hình vuông = ' + dientich)
+            
+        }
+
+        function Ccircle() {
+            let a = document.getElementById('radius').value;
+            let chuvi;
+            chuvi = a * 3.1415;
+            alert('chu vi hình tròn = ' + chuvi) 
+         }
+    </script>
+</body>
+</html>
